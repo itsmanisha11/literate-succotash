@@ -1,0 +1,333 @@
+/* General */
+
+* {
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+textarea {
+    resize: vertical;
+}
+
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    height: 100px;
+    justify-content: center;
+    background-color: #202258;
+}
+
+.logo {
+    height: auto;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar-toggler {
+    background-color: transparent;
+    border: none;
+    width: 45px;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.navbar-collapse {
+    justify-content: right;
+}
+
+.navbar-nav {
+    align-items: center;
+    z-index: 888;
+}
+
+.nav-item {
+    padding: 0 20px;
+}
+
+.nav-item a {
+    font-size: 16px;
+    color: white;
+}
+
+.nav-link {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.nav-link:active {
+    color: white;
+}
+
+ul li a,
+ul li a:after,
+ul li a:before {
+    transition: all .5s;
+}
+
+ul li a,
+ul li a {
+    position: relative;
+    color: white;
+}
+
+ul li a:after,
+ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: white;
+    height: 1px;
+}
+ul li a:hover:after {
+    width: 100%;
+}
+
+.banner {
+
+    width: auto;
+}
+
+.banner-img {
+    background-image: url("assets/img/banner.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 160px 110px 25px;
+}
+
+.banner-caption {
+    margin: 40px;
+    animation: fadeIn 5s;
+}
+
+.caption {
+    color: white;
+    background-color: #202258;
+    font-size: 24px;
+    font-weight: 800;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.2;
+    box-shadow: 10px 10px 5px black;
+}
+
+.banner-caption p {
+    color: white;
+    font-size: 20px;
+    background-color: #202258;
+    padding: 10px;
+}
+
+.benefits {
+    margin: 40px;
+}
+
+.benefits h2 {
+    color: #202258;
+}
+
+.benefits .card {
+    background-color: #202258;
+    color: white;
+    margin: 40px 0;
+}
+
+.countries {
+    text-align: center;
+    background-color: white;
+}
+
+.bg-overlay {
+    background-color:#202258;
+    position: relative;
+    height: 275px;
+}
+
+.countries .title {
+    width: 100%;
+    position: absolute;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.countries .card {
+    /*width: 250px;
+    height: 362px;
+    flex-direction: column;*/
+    margin: -130px 20px 40px;
+    position: relative;
+    text-align: center;
+    border-radius: 0 0 50px 50px;
+}
+
+.card .image-box {
+    height: 50%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.card .content-box {
+    position: relative;
+}
+
+.content-box .flag {
+    position: relative;
+    overflow: hidden;
+    width: 70px;
+    height: 65px;
+    border-radius: 50%;
+    display: block;
+    z-index: 5;
+    margin: -48px auto 20px;
+}
+
+.content-box .flag img {
+    height: 100%;
+}
+
+.content-box .content-details {
+    font-size: 16px;
+    padding: 0 15px;
+}
+
+.process {
+    text-align: center;
+    padding: 40px;
+}
+
+.process .steps {
+    width: 60px;
+    height: 60px;
+    background-color: #ffc107;
+    box-shadow: 5px 10px 5px #7d5f08;
+    margin: -20px;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 5;
+    color: #202258;
+}
+
+.process .steps-details {
+    height: 200px;
+    background-color: #202258;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 5px 10px 5px grey;
+}
+
+.process .steps-details .icon {
+    float: right;
+    margin: 20px 20px 0;
+}
+
+.process .steps-details h5 {
+    padding: 60px 20px 0;
+    color: white;
+}
+
+.process .steps-details p {
+    font-size: 12px;
+    color: white;
+    padding: 5px;
+}
+
+/*---------------- Footer Begins ----------------*/
+
+.footer {
+    margin-top: -10px;
+    padding: 20px;
+    background-color: #202258;
+}
+
+.footer h1 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.footer-copyright p {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+}
+
+/*---------------- Footer Ends ----------------*/
+
+/*---------------- Back-to-top button ----------------*/
+.back-to-top-btn {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 30px;
+    z-index: 999;
+    transition: transform 1s;
+}
+
+.back-to-top-btn:hover {
+    transform: scale(1.1);
+}
+
+.back-to-top-btn .btn {
+    background-color: #ffc107;
+    border: none;
+}
+
+/*---------------- Back-to-top button ends ----------------*/
+
+@media screen and (max-width: 991px) {
+    .banner-img {
+        padding: 85px 0 1px;
+    }
+
+    .countries .card {
+        margin: -130px 20px 165px !important ;
+    }
+}
